@@ -1,6 +1,6 @@
 ## Cloud Shell Script 👇
 ```
-bash <(curl -Ls bash <(curl -s https://raw.githubusercontent.com/PitaDz14/DZkhaled-deploy/main/vless.sh)
+bash <(curl -s https://raw.githubusercontent.com/PitaDz14/DZkhaled-deploy/main/cloud-run.sh)
 
 ```
 
