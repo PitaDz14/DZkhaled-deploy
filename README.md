@@ -1,7 +1,6 @@
 ## Cloud Shell Script 👇
 ```
 bash <(curl -s https://raw.githubusercontent.com/PitaDz14/DZkhaled-deploy/main/cloud-run.sh)
-
 ```
 
 # ⚡ VLESS over WebSocket (WS) on Google Cloud Run + CDN
@@ -26,6 +25,40 @@ This project allows you to deploy a **VLESS proxy** server over **WebSocket** us
 - ✅ Use a **custom domain with HTTPS** via **Google Load Balancer + CDN** for proper functionality.
 
 ---
+
+## 🔧 Configuration Overview
+
+### `config.json`
+```json
+{
+  "inbounds": [
+    {
+      "port": 8080,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "ba0e3984-ccc9-48a3-8074-b2f507f41ce8",
+            "level": 0
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/@nkka404"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
+````
 
 > 🔐 Replace the UUID with your own for security.
 
@@ -81,10 +114,10 @@ Use the following settings in your client app:
 | Protocol   | VLESS                                  |
 | Address    | `your.domain.com`                      |
 | Port       | `443` (HTTPS)                          |
-| UUID       | `ba0e3985-ccc5-48a3-8074-b2f507f41ce8` |
+| UUID       | `ba0e3984-ccc9-48a3-8074-b2f507f41ce8` |
 | Encryption | none                                   |
 | Transport  | WebSocket (WS)                         |
-| WS Path    | `/t.g_+wPynnYT5ivtlY2Fk`                         |
+| WS Path    | `/tg-@khaled_Deragha`                         |
 | TLS        | Yes (via Google CDN)                   |
 
 ---
@@ -115,7 +148,7 @@ This project is licensed under the **MIT License**.
 
 ## 👤 Author
 
-Made with ❤️ by [PITA Community\2.0](https://t.me/+wPynnYT5ivtlY2Fk)
+Made with ❤️ by [Khaled_Dercgha\2.0](https://t.me/+wPynnYT5ivtlY2Fk)
 
 ---
 

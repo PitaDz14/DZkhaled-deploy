@@ -11,7 +11,7 @@
       "settings": {
         "clients": [
           {
-            "id": "ba0e3985-ccc5-48a3-8074-b2f507f41ce8",
+            "id": "ba0e3984-ccc9-48a3-8074-b2f507f41ce8",
             "flow": ""
           }
         ],
@@ -20,7 +20,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/@PITA",
+          "path": "/@nkka404",
           "headers": {
             "Host": ""
           }
